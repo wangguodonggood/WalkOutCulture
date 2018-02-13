@@ -13,6 +13,8 @@ public class TestGit {
         * 在这里修改代码！添加一行
         * */
         Log.i("修改代码！", "test: ");
+
+        Log.i("修改代码11111！", "test: ");
     }
 
 }
