@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WalkOutCulture</string>
+    <string name="newtour">壮游</string>
+    <string name="travel">游记</string>
+    <string name="mine">我的</string>
+    <string name="content">
+            鹿儿岛县，日本九州最南端的县，西南以奄美群岛与冲绳县相对，拥有以世界自然遗产屋久岛为首的各种特色岛屿和樱岛等火山，茂密的森林，丰富的温泉等，具有多姿多彩的大自然风景和个性力的历史文化等得天独厚的观光资源，是日本为数不多的观光县之一，是日本古代文化发源地之一。此外，还是日本国内唯一拥有聚集了现代科学精粹的宇宙火箭发射设施的县。气候温暖，属亚热带型气候，年平均气温在18.8℃左右，土壤为火山灰性质，农业和畜产业得到了大力发展，为农业县，农业产值在九州各县中居首位。工业以食品、木材、纸浆、造纸为主。
+    </string>
+    <string name="contant">
+            鹿儿岛县，日本九州最南端的县，西南以奄美群岛与冲绳县相对，拥有以世界自然遗产屋久岛为首的各种
+        特色岛屿和樱岛等火山，茂密的森林。
+    </string>
+    <string name="xinde">心得感言</string>
+    <string name="pinglun">评论</string>
+    <string name="loading">加载中…</string>
+
+</resources>

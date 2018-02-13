@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shiyuesoft.activity.SendNotesActivity">
+    <include layout="@layout/layout_sendnotes"></include>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入标题"
+        android:textColorHint="@color/grey"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:id="@+id/edit_title"
+        android:maxLength="10"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue_bac"
+        ></View>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="记录旅途，记录感言"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:id="@+id/edit_content"
+        android:maxLength="100"
+        android:lineSpacingExtra="5dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/list_item_image"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shiyuesoft.activity.MainActivity">
+    <include layout="@layout/layout_title"
+        />
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpager"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#E3E2E1"
+        android:id="@+id/radiogroup"
+        android:layout_weight="0"
+        >
+        <RadioButton
+            style="@style/MyRadioButtonStyle"
+            android:id="@+id/r1"
+            android:drawableTop="@drawable/radiobtn_selector1"
+            android:text="@string/newtour"
+            android:checked="true"
+            android:textColor="@color/blue"
+            />
+        <RadioButton
+            style="@style/MyRadioButtonStyle"
+            android:id="@+id/r2"
+            android:drawableTop="@drawable/radiobtn_selector2"
+            android:text="@string/travel"
+            android:textColor="@color/grey"
+            />
+        <RadioButton
+            style="@style/MyRadioButtonStyle"
+            android:id="@+id/r3"
+            android:drawableTop="@drawable/radiobtn_selector3"
+            android:text="@string/mine"
+            android:textColor="@color/grey"
+            />
+    </RadioGroup>
+</LinearLayout>

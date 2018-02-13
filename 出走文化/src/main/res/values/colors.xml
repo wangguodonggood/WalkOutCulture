@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#797979</color>
+    <color name="blue">#0085FE</color>
+    <color name="background">#F5F5F5</color>
+    <color name="write">#ffffff</color>
+    <color name="con1">#337AB7</color>
+    <color name="font">#E7E7E7</color>
+    <color name="blue_bac">#00A1E5</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#909090</color>
+    <color name="jfb_gray">#F5F5F5</color>
+    <color name="pnumber">#E83E44</color>
+    <color name="job_fair_detail_btn">#00A7F3</color>
+    <color name="black">#000000</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="transparent">#00000000</color>
+    <color name="select">#46B1E9</color>
+
+    <color name="blueText">#1485C6</color>
+    <color name="blueIndexStatus">#67A5EF</color>
+    <color name="blueStatus">#1680E2</color>
+
+    <color name="dark">#424242</color>
+    <color name="red">#FFD4212A</color>
+    <color name="line">#EEEEEE</color>
+
+    <color name="greyBackground">#FFCFCFCF</color>
+
+</resources>

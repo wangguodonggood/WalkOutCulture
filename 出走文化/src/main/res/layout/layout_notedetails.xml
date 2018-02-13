@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="@color/blue_bac"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/back"
+        android:background="@drawable/drawable_v2"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="10dip"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:background="@color/white"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        />
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/drawable_v2"
+        android:id="@+id/note_layout_edit"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/edit"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

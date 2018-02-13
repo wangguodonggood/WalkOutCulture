@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:briup="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--<ProgressBar
+            android:layout_alignParentTop="true"
+            android:id="@+id/footer_progressbar"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />-->
+        <com.shiyuesoft.util.CircleProgress
+            android:layout_marginTop="5dp"
+            android:id="@+id/footer_progressbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            briup:circleColor="#0A6CFF"
+            briup:maxRadius="3dp"
+            briup:minRadius="1dp"
+            briup:rotateSpeedInMillis="100"
+            briup:numOfCircles="12" />
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="加载中···"
+            android:gravity="center"
+            android:layout_toRightOf="@id/footer_progressbar"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

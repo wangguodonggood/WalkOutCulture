@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="numOfCircles" format="integer"/>
+        <attr name="maxRadius" format="dimension"/>
+        <attr name="minRadius" format="dimension"/>
+        <attr name="rotateSpeedInMillis" format="integer"/>
+        <attr name="isClockwise" format="boolean"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+</resources>

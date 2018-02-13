@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_v1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp">
+
+        <com.shiyuesoft.util.CircleImageView
+            android:id="@+id/moments_ImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/hugh"
+            app:border_width="0.5dp"
+            app:border_color="@color/gray"
+            />
+
+        <TextView
+            android:id="@+id/moments_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/moments_ImageView"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moments_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/moments_name"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/moments_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/moments_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moments_name"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/moments_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moments_title"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jing"
+            android:layout_above="@id/moments_content"
+            android:layout_toRightOf="@id/moments_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="11dp"
+            android:id="@+id/jingflag"
+            android:visibility="gone"
+            />
+     <!--   <com.loopj.android.image.SmartImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showfirst_image"
+            android:src="@drawable/u2"
+            android:layout_below="@id/moments_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />-->
+        <com.shiyuesoft.util.NineGridTestLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layout_nine_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moments_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:sapcing="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_bac"
+            android:textSize="15sp"
+            android:layout_below="@id/layout_nine_grid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/moments_address"
+            />
+    <!--    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            android:layout_below="@id/moments_address"
+            android:layout_marginTop="5dp"
+            android:id="@+id/view"
+            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/moments_radiogroup"
+            android:layout_below="@id/moments_address"
+            android:background="@color/background"
+            >
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/m_r1"
+                android:drawableLeft="@drawable/share"
+                android:text="1"
+                android:drawablePadding="-30dp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent" />
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/m_r2"
+                android:drawableLeft="@drawable/collct_selector"
+                android:textColor="@color/grey"
+                android:paddingLeft="25dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/m_r3"
+                android:drawableLeft="@drawable/collct_selector1"
+                android:textColor="@color/grey"
+                android:text="1"
+                android:drawablePadding="-30dp"
+                android:paddingLeft="25dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/m_r4"
+                android:drawableLeft="@drawable/msg"
+                android:textColor="@color/grey"
+                android:drawablePadding="-30dp"
+                android:paddingLeft="25dp"
+                android:text="1"
+                android:layout_height="39dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moment_id"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/if_colloct"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/if_good"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</RelativeLayout>

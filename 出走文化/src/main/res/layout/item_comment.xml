@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="10dp"
+     android:paddingBottom="15dp"
+     >
+
+    <com.shiyuesoft.util.CircleImageView
+        android:id="@+id/roundImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/hugh"
+        android:layout_marginLeft="20dp"
+        app:border_width="0.5dp"
+        app:border_color="@color/gray"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="张晓涵"
+    android:layout_toRightOf="@id/roundImageView"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:textSize="16sp" android:id="@+id/comment_name"
+    />
+    <TextView
+        android:id="@+id/identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学生"
+        android:layout_toRightOf="@id/comment_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_time"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/grey"
+        android:text="2017年7月12日 16:25"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/comment_content"
+          android:text="@string/contant"
+          android:textSize="15sp"
+          android:layout_below="@id/comment_name"
+          android:layout_toRightOf="@id/roundImageView"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:lineSpacingExtra="5dp"
+          />
+ </RelativeLayout>
+
+</RelativeLayout>
